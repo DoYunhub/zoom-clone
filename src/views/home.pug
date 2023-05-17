@@ -10,6 +10,12 @@ html(lang="en")
       header
           h1 Zoom!
       main
-          h2 Welcom to Noom
+          form#nick
+              input(type="text", placeholder="닉네임을 적어주세요.", required)
+              button 저장
+          ul
+          form#message
+              input(type="text", placeholder="메세지를 적어주세요.", required)
+              button 보내기
 
       script(src="public/js/app.js")
