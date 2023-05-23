@@ -8,14 +8,11 @@ html(lang="en")
     link(rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css")
   body 
       header
-          h1 Zoom!
+          h1 Zoom
       main
-          form#nick
-              input(type="text", placeholder="닉네임을 적어주세요.", required)
-              button 저장
-          ul
-          form#message
-              input(type="text", placeholder="메세지를 적어주세요.", required)
-              button 보내기
-
-      script(src="public/js/app.js")
+          div#welcome
+              form
+                  input(placeholder="Room Name", required, type="text")
+                  button Enter Room
+      script(src="/socket.io/socket.io.js")
+      script(src="/public/js/app.js")
